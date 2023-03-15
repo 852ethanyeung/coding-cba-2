@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/microbit/microbit-logo-black.png" type="image/x-icon" />
+    <link href="../styles/style.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Ethan Yeung's Micro:bit website</title>
+</head>
+
+<body>
+    <header>
+        <nav class="primary-nav">
+            <!-- vert dropdown: default-->
+            <div class="dropdown">
+                <button onclick="togglePrimaryDropdown()" class="primary-dropdown-button material-symbols-outlined"
+                    id="primaryNavDropdownButton">
+                    menu
+                </button>
+                <div id="primaryNavDropdown" class="dropdown-content">
+                    <a href="../microtools/index.html">Micro:Tools</a>
+                    <a href="../microprojects/index.html">Micro:Projects</a>
+                    <a href="../cba-2/index.html">CBA 2</a>
+                </div>
+            </div>
+
+            <!-- only displays if screen wide enough-->
+            <div class="header-left">
+                <ul class="long">
+                    <li><a href="../microtools/index.html">Micro:Tools</a></li>
+                    <li><a href="../microprojects/index.html">Micro:Projects</a></li>
+                    <li><a href="../cba-2/index.html">CBA 2</a></li>
+                </ul>
+                <div class="long-list-balance"></div>
+            </div>
+        </nav>
+        <div class="logo"><a href="../index.html" alt="Home"><img src="../images/transparent-mask.png"></a></div>
+        <nav class="secondary-nav">
+            <div class="dropdown">
+                <button onclick="toggleSecondaryDropdown()" class="secondary-dropdown-button material-symbols-outlined"
+                    id="secondaryNavDropdownButton">
+                    more_vert
+                </button>
+                <div id="secondaryNavDropdown" class="dropdown-content">
+                    <p>In this page</p>
+                    <a href="#AboutCBA2">About CBA 2</a>
+                    <a href="#WhatIsHTML">What is HTML?</a>
+                    <a href="#Sections">Sections</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>About CBA 2<div id="AboutCBA2"></div>
+            </h1>
+            <p class="subheader">I deep-fried my brain</p>
+            <p>Classroom-based assessments, or "CBA"s, are projects carried out by Irish Junior Cycle students to assess
+                their skills and knowledge of a particular subject when given a task that is more relavent to real-life
+                situations. For example, an English CBA may be to give a presentation on a certain topic to the whole
+                class, and a music CBA may be to write a programme note for certain pieces of music.</p>
+
+            <p>Of course, the computer subject, or more specifically the "Junior Cycle Coding Short Course", is no
+                exception to this. Our CBA is based on our computer course for the past term (which is Term 2), where we
+                learnt about creating websites using HTML and CSS. We would base our website content on our Term 1
+                computer course, which involves programming a special device called a Micro:Bit. However, the content is
+                not the main point of the CBA: good use of HTML and CSS (and perhaps a bit of JS) is what the teacher is
+                looking out for.</p>
+            <h2>What is HTML?<div id="WhatIsHTML"></div>
+            </h2>
+            <img src="images/index-page/html-example.png" alt="A example of HTML code" class="float-right"
+                id="image-html-example">
+            <p>HTML, short for "HyperText Markup Language", is the standard code used for structuring web pages. In
+                simple terms, web browsers take in HTML and output what you see on the page. It is based on elements, in
+                which content is wrapped in. The tags and its attributes control how its content will be processed.</p>
+            <p>However, HTMl can only control the content and structure of the website. To create designs and add
+                interactive elements, CSS ("Cascading Style Sheets") and JS ("JavaScript") are used alongside HTML.
+                Together, they make a complete, functioning website, like this one.</p>
+            <h2>Sections<div id="Sections"></div>
+            </h2>
+            <div class="section-box">
+                <a href="ui-guide.html">UI Guide</a>
+                <a href="features.html">Features</a>
+                <a href="">My thoughts</a>
+                <a href="">Resources</a>
+                <a href="" class="two-lines">Source code (GitHub<sup><span
+                            class="material-symbols-outlined open-in-new">
+                            open_in_new
+                        </span></sup>)</a>
+            </div>
+        </article>
+        <aside>
+            <p>In this page</p>
+            <a href="#AboutCBA2">About CBA 2</a>
+            <a href="#WhatIsHTML">What is HTML?</a>
+            <a href="#Sections">Sections</a>
+        </aside>
+    </main>
+    <footer>
+        <p>Made by Ethan Yeung, Grammar 2023<br>Coding CBA 2</p>
+    </footer>
+</body>
+
+<script src="../scripts/main.js"></script>
+
+</html>
+
+<!-- copy and paste everything outside of main-->

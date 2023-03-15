@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/microbit/microbit-logo-black.png" type="image/x-icon" />
+    <link href="../styles/style.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Ethan Yeung's Micro:bit website</title>
+</head>
+
+<body>
+    <header>
+        <nav class="primary-nav">
+            <!-- vert dropdown: default-->
+            <div class="dropdown">
+                <button onclick="togglePrimaryDropdown()" class="primary-dropdown-button material-symbols-outlined"
+                    id="primaryNavDropdownButton">
+                    menu
+                </button>
+                <div id="primaryNavDropdown" class="dropdown-content">
+                    <a href="../microtools/index.html">Micro:Tools</a>
+                    <a href="../microprojects/index.html">Micro:Projects</a>
+                    <a href="../cba-2/index.html">CBA 2</a>
+                </div>
+            </div>
+
+            <!-- only displays if screen wide enough-->
+            <div class="header-left">
+                <ul class="long">
+                    <li><a href="../microtools/index.html">Micro:Tools</a></li>
+                    <li><a href="../microprojects/index.html">Micro:Projects</a></li>
+                    <li><a href="../cba-2/index.html">CBA 2</a></li>
+                </ul>
+                <div class="long-list-balance"></div>
+            </div>
+        </nav>
+        <div class="logo"><a href="../index.html" alt="Home"><img src="../images/transparent-mask.png"></a></div>
+        <nav class="secondary-nav">
+            <div class="dropdown">
+                <button onclick="toggleSecondaryDropdown()" class="secondary-dropdown-button material-symbols-outlined"
+                    id="secondaryNavDropdownButton">
+                    more_vert
+                </button>
+                <div id="secondaryNavDropdown" class="dropdown-content">
+                    <p>In this page</p>
+                    <a href="#UIGuide">UI Guide</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Features<div id="Features"></div>
+            </h1>
+            <p class="subheader">If I make it obvious what I've put into this website, I'm gonna get a better grade</p>
+            <h2>Website structure<div id="WebsiteStructure"></div>
+            </h2>
+            <p>Every website needs a clear structure. A tool I used for this are semantic tags in the HTML. HTML layout
+                elements I used include: </p>
+            <ul>
+                <li><span class="code-block">&lt;nav&gt;</span> for the primary and secondary navigation menus</li>
+                <li><span class="code-block">&lt;header&gt;</span> for the header section that sticks to the top of the
+                    screen as the user scrolls down</li>
+                <li><span class="code-block">&lt;main&gt;</span> to contain the main contents, as well as a secondary
+                    navigation system in a sidebar</li>
+                <li><span class="code-block">&lt;article&gt;</span> to separate the actual content in the &lt;main&gt;
+                    tag from the sidebar</li>
+                <li><span class="code-block">&lt;aside&gt;</span> for the secondary navigation menu that appears when
+                    the screen width is large enough</li>
+                <li><span class="code-block">&lt;footer&gt;</span> to give webpages an ending block</li>
+            </ul>
+            <h2>Header<div id="Header"></div></h2>
+            <h3>Sticky header<div id="StickyHeader"></div></h3>
+            <p>To allow the header, which contains the navigation menus, to remain in place at the top of the screen as
+                the user scrolls down, I used <span class="code-block">position: sticky;</span> and <span
+                    class="code-block">top: 0;</span> to keep the header in place.</p>
+        </article>
+        <aside>
+            <p>In this page</p>
+            <a href="#Features">Features</a>
+        </aside>
+    </main>
+    <footer>
+        <p>Made by Ethan Yeung, Grammar 2023<br>Coding CBA 2</p>
+    </footer>
+</body>
+
+<script src="../scripts/main.js"></script>
+
+</html>
+
+<!-- copy and paste everything outside of main-->

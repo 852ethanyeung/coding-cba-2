@@ -1,0 +1,537 @@
+/* google fonts and icons */
+
+@font-face {
+    font-family: "comfortaa";
+    src: url("fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL'0,
+        'wght'700,
+        'GRAD'0,
+        'opsz'48
+}
+
+.material-symbols-outlined.open-in-new {
+    font-size: 75%;
+    /* remember to <sup> this */
+}
+
+/* general */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px "comfortaa", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+a {
+    outline: none;
+}
+
+a:link {
+    color: gold;
+}
+
+a:visited {
+    color: white;
+}
+
+a:focus, a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+    background-color: gold;
+}
+
+h1 {
+    font-size: 2.5rem;
+    position: relative;
+    cursor: default;
+}
+
+.subheader {
+    font-size: 1.25rem;
+    color: goldenrod;
+    line-height: 1.25;
+    margin-block-start: -0.75rem;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 2rem;
+    position: relative;
+    cursor: default;
+}
+
+h3 {
+    font-size: 1.5rem;
+    position: relative;
+    cursor: default;
+}
+
+h4 {
+    font-size: 1.17rem;
+    position: relative;
+    cursor: default;
+}
+
+p, ul {
+    line-height: 1.75;
+    cursor: default;
+}
+
+.float-left {
+    margin-block: 0.5rem;
+    float: left;
+    margin-inline-end: 1.5rem;
+}
+
+.float-right {
+    margin-block: 0.5rem;
+    float: right;
+    margin-inline-start: 1.5rem;
+}
+
+.code-block {
+    background-color: white;
+    color: black;
+    padding-inline: 0.25rem;
+}
+
+/* main */
+
+main {
+    min-block-size: calc(100vh - 16.5rem - 5px);
+}
+
+
+main article {
+    inline-size: 80vw;
+    margin-inline: auto;
+    block-size: auto;
+}
+
+/* section box */
+
+.section-box {
+    padding-inline: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+    grid-auto-rows: 8rem;
+    gap: 1rem;
+}
+
+.section-box a {
+    border: 5px solid gold;
+    line-height: 8rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgb(255, 215, 0, 0.5);
+    padding-inline: 0.5rem;
+}
+
+.section-box a:hover, .section-box a:focus, .section-box a:active {
+    color: black;
+    background-color: gold;
+}
+
+.section-box a.two-lines {
+    line-height: 1.5rem;
+    padding-block: 2rem;
+}
+
+/* aside */
+
+aside {
+    display: none;
+    inline-size: calc(20vw - 5px);
+    max-block-size: calc(16.5rem + 5px);
+    border-inline-start: 5px solid gold;
+    position: fixed;
+    top: 11rem;
+    right: 3vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+aside p {
+    font-size: 1.17rem;
+    margin: 0;
+    background-color: gold;
+    block-size: 2.5rem;
+    line-height: 3rem;
+    padding-inline-start: 0.75rem;
+    color: black;
+    inline-size: inherit;
+}
+
+aside a:link {
+    display: block;
+    margin-inline-start: 1rem;
+    margin-block: 1rem;
+    border-bottom: 2.5px solid white;
+    color: white;
+    text-decoration: none;
+}
+
+aside a:hover, aside a:focus, aside a:active {
+    color: gold;
+    border-color: gold;
+}
+
+/* header */
+
+header {
+    background: linear-gradient(150deg, black 55%, gold 85%);
+    color: #ffffff;
+    block-size: 6rem;
+    inline-size: calc(100vw - (100vw - 100%));
+    padding: 0;
+    border-block-end: 5px solid gold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    margin-block-end: 1.5rem;
+    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.8);
+    z-index: 99;
+}
+
+header nav {
+    flex: 1;
+    padding: 0;
+    align-self: flex-end;
+}
+
+/* default vert dropdown */
+
+header nav.primary-nav .dropdown {
+    position: relative;
+}
+
+header nav.primary-nav .primary-dropdown-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-inline-start: 0.5rem;
+    cursor: pointer;
+    block-size: 2rem;
+    inline-size: 2rem;
+    font-size: 1.5rem;
+}
+
+header nav.primary-nav .primary-dropdown-button:hover, header nav.primary-nav .primary-dropdown-button:focus, header nav.primary-nav .primary-dropdown-button:active {
+    color: gold;
+}
+
+header nav.primary-nav .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 3.5rem;
+    padding-inline: 0.5rem;
+}
+
+header nav.primary-nav .dropdown-content.show-primary-nav-dropdown {
+    display: block;
+}
+
+header nav.primary-nav .dropdown-content a {
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    block-size: 3rem;
+    inline-size: max-content;
+    text-align: left;
+    line-height: 3rem;
+    padding-inline: 0.75rem;
+    margin-block-end: 1rem;
+    border: 2.5px solid gold;
+    box-shadow: 0 0.5rem 1rem rgb(255, 215, 0, 0.5);
+    display: block;
+    text-decoration: none;
+}
+
+header nav.primary-nav .dropdown-content a:hover, header nav.primary-nav .dropdown-content a:focus, header nav.primary-nav .dropdown-content a:active {
+    color: black;
+    background-color: gold;
+}
+
+/* end */
+
+/* this only appears when the screen is wide enough */
+
+header nav.primary-nav .header-left {
+    display: flex;
+}
+
+header nav.primary-nav .header-left .long-list-balance {
+    flex: 1;
+}
+
+header nav.primary-nav .long {
+    flex: 2;
+    list-style: none;
+    margin: 0;
+    margin-block-end: 0.5rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav.primary-nav .long li {
+    display: none;
+}
+
+header nav.primary-nav div.header-left .long li a {
+    text-decoration: none;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+}
+
+header nav.primary-nav div.header-left .long li a:hover, header nav.primary-nav div.header-left .long li a:focus {
+    color: gold;
+}
+
+@media screen and (min-width: 70rem) {
+    header nav.primary-nav .primary-dropdown-button {
+        display: none;
+    }
+
+    header nav.primary-nav .long li {
+        display: block;
+    }
+
+    header nav.primary-nav div.header-left .long li a {
+        font-size: calc(0.25rem + 1vw);
+    }
+}
+
+header .logo {
+    flex: 1;
+    display: block;
+    block-size: 2.5rem;
+    max-inline-size: 4rem;
+    padding: 0;
+    background: url(../images/microbit/microbit-logo-white.png) center/4rem;
+}
+
+header .logo:hover {
+    background: url(../images/microbit/microbit-logo-gold.png) center/4rem;
+}
+
+header .logo a:active {
+    background: none;
+}
+
+header .logo img {
+    max-block-size: 2.5rem;
+    min-inline-size: 4rem;
+}
+
+/* secondary nav what am i doing */
+
+header nav.secondary-nav {
+    flex: 1;
+}
+
+header nav.secondary-nav .dropdown {
+    position: relative;
+}
+
+header nav.secondary-nav .secondary-dropdown-button {
+    float: right;
+    position: relative;
+    bottom: 8px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-inline-start: 0.5rem;
+    cursor: pointer;
+    block-size: 2rem;
+    inline-size: 2rem;
+    font-size: 1.5rem;
+}
+
+header nav.secondary-nav .secondary-dropdown-button:hover, header nav.secondary-nav .secondary-dropdown-button:focus, header nav.secondary-nav .secondary-dropdown-button:active {
+    color: white;
+}
+
+header nav.secondary-nav .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    max-block-size: 15rem;
+    inline-size: 110vw;
+    border-block-end: 5px solid gold;
+    text-align: right;
+    box-shadow: 0 0.5rem 1rem rgb(255, 215, 0, 0.5);
+    background-color: black;
+    overflow-x: hideen;
+}
+
+header nav.secondary-nav .dropdown .dropdown-content.show-secondary-nav-dropdown {
+    display: block;
+}
+
+header nav.secondary-nav .dropdown .dropdown-content p {
+    background-color: gold;
+    color: black;
+    font-size: 1.17rem;
+    margin: 0;
+    block-size: 2rem;
+    line-height: 2rem;
+    padding-inline-end: 0.5rem;
+}
+
+header nav.secondary-nav .dropdown .dropdown-content a {
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    display: block;
+    margin-block: 0.5rem;
+    border-bottom: 2.5px solid white;
+    text-decoration: none;
+    margin-inline: 0.5rem;
+}
+
+header nav.secondary-nav .dropdown-content a:hover, header nav.secondary-nav .dropdown-content a:focus, header nav.secondary-nav .dropdown-content a:active {
+    color: gold;
+    border-color: gold;
+}
+
+/* if screen is big enough then aside is used */
+
+@media screen and (min-width: 70rem) {
+    main {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+
+    main article {
+        inline-size: 65vw;
+    }
+
+    aside {
+        display: block;
+    }
+
+    header nav.secondary-nav .secondary-dropdown-button {
+        display: none;
+    }
+}
+
+/* footer */
+
+footer {
+    background: linear-gradient(210deg, black 55%, gold 85%);
+    border-block-start: 5px solid gold;
+    block-size: calc(4rem + 5px);
+    inline-size: calc(100vw - (100vw - 100%));
+    padding: 0;
+    margin-block-start: 5rem;
+    position: relative;
+    overflow-y: hidden;
+}
+
+footer p {
+    margin: 0;
+    block-size: 4rem;
+    text-align: right;
+    padding-inline-end: 2rem;
+    position: absolute;
+    right: 0;
+    top: 0.75rem;
+    line-height: 1.25rem;
+}
+
+/* images sizing */
+#image-html-example {
+    display: block;
+    width: 30vw;
+}
+
+/* id adjusters you know la */
+
+#CodingCBA2, #Sections, #AboutCBA2, #WhatIsHTML, #UIGuide {
+    position: absolute;
+    top: calc(-9.5rem - 5px);
+}
+
+/* cba-2/guide guide blocks */
+
+div.guide-block {
+    margin-block-end: 2rem;
+}
+
+div.guide-block .guide-block-image {
+    float: left;
+    inline-size: 5rem;
+    block-size: 5rem;
+    margin-inline-end: 1rem;
+}
+
+div.guide-block img {
+    max-width: 100%;
+}
+
+div.guide-block span.material-symbols-outlined {
+    font-size: 5rem;
+    cursor: default;
+}
+
+#secondary-nav-guide-example {
+    border-radius: 15%;
+    background-color: gold;
+    color: black;
+}
+
+@media screen and (min-width: 70rem) {
+    div.guide-block {
+        display: grid;
+        grid-template-columns: 7.5rem 1fr;
+        gap: 2rem;
+    }
+
+    div.guide-block .guide-block-image {
+        display: flex;
+        float: none;
+        align-items: center;
+        inline-size: 7.5rem;
+        min-block-size: 100%;
+    }
+
+    div.guide-block img {
+        flex: 1;
+    }
+
+    div.guide-block span.material-symbols-outlined {
+        flex: 1;
+        font-size: 7.5rem;
+    }
+}

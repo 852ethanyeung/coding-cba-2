@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/microbit/microbit-logo-black.png" type="image/x-icon" />
+    <link href="../styles/style.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Ethan Yeung's Micro:bit website</title>
+</head>
+
+<body>
+    <header>
+        <nav class="primary-nav">
+            <!-- vert dropdown: default-->
+            <div class="dropdown">
+                <button onclick="togglePrimaryDropdown()" class="primary-dropdown-button material-symbols-outlined"
+                    id="primaryNavDropdownButton">
+                    menu
+                </button>
+                <div id="primaryNavDropdown" class="dropdown-content">
+                    <a href="../microtools/index.html">Micro:Tools</a>
+                    <a href="../microprojects/index.html">Micro:Projects</a>
+                    <a href="../cba-2/index.html">CBA 2</a>
+                </div>
+            </div>
+
+            <!-- only displays if screen wide enough-->
+            <div class="header-left">
+                <ul class="long">
+                    <li><a href="../microtools/index.html">Micro:Tools</a></li>
+                    <li><a href="../microprojects/index.html">Micro:Projects</a></li>
+                    <li><a href="../cba-2/index.html">CBA 2</a></li>
+                </ul>
+                <div class="long-list-balance"></div>
+            </div>
+        </nav>
+        <div class="logo"><a href="../index.html" alt="Home"><img src="../images/transparent-mask.png"></a></div>
+        <nav class="secondary-nav">
+            <div class="dropdown">
+                <button onclick="toggleSecondaryDropdown()" class="secondary-dropdown-button material-symbols-outlined"
+                    id="secondaryNavDropdownButton">
+                    more_vert
+                </button>
+                <div id="secondaryNavDropdown" class="dropdown-content">
+                    <p>In this page</p>
+                    <a href="#UIGuide">UI Guide</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>UI Guide<div id="UIGuide"></div>
+            </h1>
+            <p class="subheader">So you don't accidentally download a virus</p>
+            <div class="guide-block">
+                <div class="guide-block-image">
+                    <img src="../images/microbit/microbit-logo-white.png" alt="Micro:bit logo">
+                </div>
+                <div class="guide-block-text">
+                    <p>The Micro:Bit logo in the center of the header is not only decorative, but also serves as a
+                        clickable link that will send you to the home page.</p>
+                    <p>When hovered (or focused) it will turn gold.</p>
+                </div>
+            </div>
+            <div class="guide-block">
+                <div class="guide-block-image">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
+                <div class="guide-block-text">
+                    <p>The menu icon on the bottom left corner of the header opens up a dropdown menu when clicked. It
+                        shows the <strong>primary</strong> navigation menu, i.e. <strong>sections of the entire
+                            website</strong>.</p>
+                    <p>When hovered (or focused) it will turn gold. When browser width exceeds a certain size, it will
+                        disappear and an expanded primary navigation menu in the same spot will take its place.</p>
+                </div>
+            </div>
+            <div class="guide-block">
+                <div class="guide-block-image">
+                    <span class="material-symbols-outlined" id="secondary-nav-guide-example">
+                        more_vert
+                    </span>
+                </div>
+                <div class="guide-block-text">
+                    <p>The vertical dots on the bottom right corner of the header also opens up a dropdown menu when
+                        clicked. It shows the <strong>secondary</strong> navigation menu, i.e. <strong>sections of the
+                            current webpage</strong>.</p>
+                    <p>When hovered (or focused) it will turn white. When browser width exceeds a certain size, it will
+                        disappear and the sidebar to the right of the main content area will take its place.</p>
+                </div>
+            </div>
+        </article>
+        <aside>
+            <p>In this page</p>
+            <a href="#UIGuide">UI Guide</a>
+        </aside>
+    </main>
+    <footer>
+        <p>Made by Ethan Yeung, Grammar 2023<br>Coding CBA 2</p>
+    </footer>
+</body>
+
+<script src="../scripts/main.js"></script>
+
+</html>
+
+<!-- copy and paste everything outside of main-->
