@@ -55,9 +55,11 @@
         <article>
             <h1>Features<div id="Features"></div>
             </h1>
-            <p class="subheader">If I make it obvious what I've put into this website, I'm gonna get a better grade</p>
-            <h2>Website structure<div id="WebsiteStructure"></div>
+            <p class="subheader">Give me a distinction</p>
+            <h2>General<div id="General"></div>
             </h2>
+            <h3>Website structure<div id="WebsiteStructure"></div>
+            </h3>
             <p>Every website needs a clear structure. A tool I used for this are semantic tags in the HTML. HTML layout
                 elements I used include: </p>
             <ul>
@@ -72,11 +74,35 @@
                     the screen width is large enough</li>
                 <li><span class="code-block">&lt;footer&gt;</span> to give webpages an ending block</li>
             </ul>
-            <h2>Header<div id="Header"></div></h2>
-            <h3>Sticky header<div id="StickyHeader"></div></h3>
+            <h3>Favicon<div id="Favicon"></div></h3>
+            <img src="images/features/favicon-example.png" alt="Favicon example" class="float-left" id="image-favicon-example">
+            <p>A favicon is a small icon that is displayed next to the page title in its tab. I used the logo as the favicon for the website.</p>
+            <h2>Header<div id="Header"></div>
+            </h2>
+            <h3>Sticky header<div id="StickyHeader"></div>
+            </h3>
             <p>To allow the header, which contains the navigation menus, to remain in place at the top of the screen as
                 the user scrolls down, I used <span class="code-block">position: sticky;</span> and <span
                     class="code-block">top: 0;</span> to keep the header in place.</p>
+            <h3>Flexbox layout<div id="FlexboxLayout"></div>
+            </h3>
+            <img src="images/features/header-flexbox.png" alt="Lines showing flex layout in the header"
+                class="float-right" id="image-header-flexbox">
+            <p>In order to make the logo remain at the center on the page, whilst putting the navigation menus on either
+                side, I used <span class="code-block">display: flex;</span> and <span class="code-block">flex: 1;</span>
+                to achieve this effect. This is better than giving each elements fixed widths as a flexbox layout would
+                be more flexible and allow the logo to remain centered whatever the viewport width is.</p>
+            <h3>Color change on hover<div id="ColorChangeOnHover"></div>
+            </h3>
+            <p>Using the <span class="code-block">:hover</span> pseudo-class, I can change the color of the menu icons
+                and the logo when hovered (or focused) to indicate to the user that it is a clickable element. For the
+                logo, as I cannot change the image directly, I instead used <span class="code-block">background-image:
+                    ...</span> which allows me to change it into another image when hovered.</p>
+            <p id="features-color-change-hover-example">Here is an interactive example. Try hovering over this text!</p>
+            <h3>Gradient<div id="Gradient"></div></h3>
+            <p>To give the header background a gradient effect, I used <span class="code-block">background:
+                    linear-gradient(150deg, black 55%, gold 85%);</span>. This is better than an image as it will remain
+                smooth and unpixelated as the header width grows and shrinks.</p>
         </article>
         <aside>
             <p>In this page</p>

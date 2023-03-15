@@ -107,7 +107,7 @@ p, ul {
 }
 
 .code-block {
-    background-color: white;
+    background-color: gold;
     color: black;
     padding-inline: 0.25rem;
 }
@@ -474,6 +474,20 @@ footer p {
 #image-html-example {
     display: block;
     width: 30vw;
+}
+
+#image-header-flexbox {
+    display: block;
+    height: 8vw;
+}
+
+#features-color-change-hover-example:hover, #features-color-change-hover-example:focus {
+    color: gold;
+}
+
+#image-favicon-example {
+    display: block;
+    height: 5vw;
 }
 
 /* id adjusters you know la */
